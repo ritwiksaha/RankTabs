@@ -1,0 +1,22 @@
+{
+  "name": "Number Tabs",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["rankTabs.js"],
+    "persistent": false
+  },
+  "description": "Automatically numbers all tabs in chrome windows",
+  "browser_action": {
+    "default_title": "Number your tabs"
+  },
+"icons" : {
+    "64": "rank.png" 
+  },
+   "permissions": [
+   "activeTab",
+   "tabs",
+   "http://*/*",
+   "https://*/*"
+   ]
+}
