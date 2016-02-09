@@ -6,7 +6,7 @@
     "scripts": ["rankTabs.js"],
     "persistent": false
   },
-  "description": "Automatically numbers all tabs in chrome windows",
+  "description": "Automatically numbers your tabs",
   "browser_action": {
     "default_title": "Number your tabs"
   },

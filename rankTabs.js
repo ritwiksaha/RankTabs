@@ -6,10 +6,10 @@ var str=null;
 function rank()
 {
 	console.log("Start");
-	chrome.windows.getCurrent(currentWindow);
+	chrome.windows.getCurrent(thisWindow);
 }
 
-function currentWindow(window)
+function thisWindow(window)
 {
 	currWin = window;
 	chrome.tabs.getAllInWindow(currWin.id, goThruTabs);
@@ -43,5 +43,3 @@ chrome.tabs.onCreated.addListener(rank);
 chrome.tabs.onDetached.addListener(rank);
 chrome.tabs.onRemoved.addListener(rank);
 chrome.tabs.onUpdated.addListener(rank);
-chrome.browserAction.onClicked.addListener(rank);
-
