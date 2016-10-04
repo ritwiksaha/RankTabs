@@ -32,7 +32,7 @@ function rankTabs(winArray)
 				str = (1+currTab.index)+". "+currTab.title.substr(temp+2);	
 			else
 				str = (1+currTab.index)+". "+currTab.title;
-			chrome.tabs.executeScript(currTab.id, {code:"document.title = '"+str+"'"});
+			chrome.tabs.executeScript({code:"document.title = '"+str+"'"});
 			console.log(str);
 			console.log(currTab.id);
 		}
